@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme inline {
+    @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+    @custom-variant light (&:where([data-theme=light], [data-theme=light] *));
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
